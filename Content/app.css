@@ -1,4 +1,13 @@
-/* custom syle sheet */
+/* 
+
+ FILE: COMP125-M2020-MidTerm-Test css
+ AUTHOR: Thiago Luiz Batista
+ WEB SITE: The Travel Report
+ DESCRIPTION: This is the Style Sheet for the whole web page
+
+*/
+
+/* custom style sheet */
 
 .navbar {
     opacity: 0.8;
@@ -14,7 +23,8 @@ main {
     padding-top: 4.375em
 }
 
-article, section {
+article,
+section {
     font-size: 1.35em;
 }
 
