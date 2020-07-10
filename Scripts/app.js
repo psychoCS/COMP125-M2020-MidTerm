@@ -11,6 +11,8 @@
 
   // YOUR CODE GOES HERE
 
+  // ADDING THE PARAGRAPHS
+
   // Step 1 - Anchor to the IntroParagraph
   function addTextToIntro() {
     let text = document.getElementsByClassName(
@@ -194,22 +196,33 @@
     return false;
   }
 
-  let Users = [];
-  // Here we will put all the variables of the user in objects
-  const addUser = (ev) => {
-    ev.preventDefault(); // So it will not submit right away
+  // OUTPUT THE VARIABLES IN CONSOLE
 
-    let user = {
-      FName: document.getElementById("firstName").value,
-      LName: document.getElementById("lastName").value,
-      CNumber: document.getElementById("contactNumber").value,
-      Email: document.getElementById("email").value,
-      Message: document.getElementById("yourMessage"),
-    };
-    Users.push(user);
-    document.forms[0].reset(); // So in this way it will be cleared for the next entry.
+  // Step 1 - Create an array to store the variables
+  let Users = [];
+
+  // Step 2 - Lets create a function that prevent the click to reload the page
+  const addUser = (ev) => {
+    ev.preventDefault();
+
+    // Step 3 - Lets create the user and retrieve its values from the form.
+    let user = {};
+
+    (user.date = Date.now()),
+      (user.FName = document.getElementById("firstName").value),
+      (user.LName = document.getElementById("lastName").value),
+      (user.CNumber = document.getElementById("contactNumber").value),
+      (user.Email = document.getElementById("email").value),
+      (user.Message = document.getElementById("yourMessage")),
+      (user.Filled = new (function () {
+        console.log(`${user.FName} filled the form`);
+      })());
+
+    // Step 4 - Lets display in the console the Message + variables.
+    console.log(user);
   };
 
+  // Step 5 - Lets 'close the circuit' by adding the variables when someone click the button.
   document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("sendButton").addEventListener("click", addUser);
   });
