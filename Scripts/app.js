@@ -215,7 +215,10 @@
       (user.Email = document.getElementById("email").value),
       (user.Message = document.getElementById("yourMessage")),
       (user.Filled = new (function () {
-        console.log(`${user.FName} filled the form`);
+        console.log(
+          `%c${user.FName} filled the form`,
+          "background: green; color: white; font-size: 14px;"
+        );
       })());
 
     // Step 4 - Lets display in the console the Message + variables.
@@ -227,78 +230,141 @@
     document.getElementById("sendButton").addEventListener("click", addUser);
   });
 
-  // Start the functions
+  // Lets Check if all the functions are working properly displaying the result on the console.
   function Start() {
-    console.log("%cApp Started...", "color:white; font-size: 24px;");
+    console.log(
+      "%cChecking the functions...",
+      "background: green; color: white; font-size: 14px;"
+    );
 
     let success = addTextToIntro();
     if (success) {
-      console.log("successfully added paragraphs to Intro");
+      console.log(
+        "%cSuccessfully added paragraphs to Intro",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Intro- does not exist");
+      console.warn(
+        "%cContent not added to Intro does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
 
     let success1 = addTextToFolegandros();
     if (success1) {
-      console.log("successfully added paragraphs to Folegandros");
+      console.log(
+        "%cSuccessfully added paragraphs to Folegandros",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Folegandros- does not exist");
+      console.warn(
+        "%cContent not added to Folegandros does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
 
     let success2 = addTextToAlonissos();
     if (success2) {
-      console.log("successfully added paragraphs to Alonissos");
+      console.log(
+        "%cSuccessfully added paragraphs to Alonissos",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Alonissos- does not exist");
+      console.warn(
+        "%cContent not added to Alonissos does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
 
     let success3 = addTextToSpetses();
     if (success3) {
-      console.log("successfully added paragraphs to Spetses");
+      console.log(
+        "%cSuccessfully added paragraphs to Spetses",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Spetses- does not exist");
+      console.warn(
+        "%cContent not added to Spetses does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
 
     let success4 = addTextToAmorgos();
     if (success4) {
-      console.log("successfully added paragraphs to Amorgos");
+      console.log(
+        "%cSuccessfully added paragraphs to Amorgos",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Amorgos- does not exist");
+      console.warn(
+        "%cContent not added to Amorgos does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
 
     let success5 = addTextToSyros();
     if (success5) {
-      console.log("successfully added paragraphs to Syros");
+      console.log(
+        "%cSuccessfully added paragraphs to Syros",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Syros- does not exist");
+      console.warn(
+        "%cContent not added to Syros does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
 
     let success6 = addTextToMilos();
     if (success6) {
-      console.log("successfully added paragraphs to Milos");
+      console.log(
+        "%cSuccessfully added paragraphs to Milos",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Milos- does not exist");
+      console.warn(
+        "%cContent not added to Milos does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
 
     let success7 = addTextToHydra();
     if (success7) {
-      console.log("successfully added paragraphs to Hydra");
+      console.log(
+        "%cSuccessfully added paragraphs to Hydra",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Hydra- does not exist");
+      console.warn(
+        "%cContent not added to Hydra does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
 
     let success8 = addTextToIthaca();
     if (success8) {
-      console.log("successfully added paragraphs to Ithaca");
+      console.log(
+        "%cSuccessfully added paragraphs to Ithaca",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Ithaca- does not exist");
+      console.warn(
+        "%cContent not added to Ithaca does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
 
     let success9 = addTextToGavdos();
     if (success9) {
-      console.log("successfully added paragraphs to Gavdos");
+      console.log(
+        "%cSuccessfully added paragraphs to Gavdos",
+        "color:blue; font-size: 12px;"
+      );
     } else {
-      console.warn("content not added to Gavdos- does not exist");
+      console.warn(
+        "%cContent not added to Gavdos does not exist",
+        "color:red; font-size: 12px;"
+      );
     }
   }
 
