@@ -202,8 +202,8 @@
   let Users = [];
 
   // Step 2 - Lets create a function that prevent the click to reload the page
-  const addUser = (ev) => {
-    ev.preventDefault();
+  const addUser = (prevent) => {
+    prevent.preventDefault();
 
     // Step 3 - Lets create the user and retrieve its values from the form.
     let user = {};
@@ -221,6 +221,9 @@
         );
       })());
 
+    Users.push(user);
+    document.forms[0].reset();
+
     // Step 4 - Lets display in the console the Message + variables.
     console.log(user);
   };
@@ -230,7 +233,7 @@
     document.getElementById("sendButton").addEventListener("click", addUser);
   });
 
-  // Lets Check if all the functions are working properly displaying the result on the console.
+  // Lets Check if the functions are working properly displaying the result on the console.
   function Start() {
     console.log(
       "%cChecking the functions...",
