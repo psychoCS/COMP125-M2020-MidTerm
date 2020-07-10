@@ -11,7 +11,7 @@
 
   // YOUR CODE GOES HERE
 
-  // ADDING THE PARAGRAPHS
+  /* ADDING THE PARAGRAPHS */
 
   // Step 1 - Anchor to the IntroParagraph
   function addTextToIntro() {
@@ -196,7 +196,7 @@
     return false;
   }
 
-  // OUTPUT THE VARIABLES IN CONSOLE
+  /* OUTPUT THE FORM VARIABLES IN CONSOLE */
 
   // Step 1 - Create an array to store the variables
   let Users = [];
@@ -209,17 +209,17 @@
     let user = {};
 
     (user.date = Date.now()),
-      (user.FName = document.getElementById("firstName").value),
-      (user.LName = document.getElementById("lastName").value),
-      (user.CNumber = document.getElementById("contactNumber").value),
-      (user.Email = document.getElementById("email").value),
-      (user.Message = document.getElementById("yourMessage")),
-      (user.Filled = new (function () {
-        console.log(
-          `%c${user.FName} filled the form`,
-          "background: green; color: white; font-size: 14px;"
-        );
-      })());
+    (user.FName = document.getElementById("firstName").value),
+    (user.LName = document.getElementById("lastName").value),
+    (user.CNumber = document.getElementById("contactNumber").value),
+    (user.Email = document.getElementById("email").value),
+    (user.Message = document.getElementById("yourMessage")),
+    (user.Filled = new(function () {
+      console.log(
+        `%c${user.FName} filled the form`,
+        "background: green; color: white; font-size: 14px;"
+      );
+    })());
 
     Users.push(user);
     document.forms[0].reset();
@@ -232,6 +232,9 @@
   document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("sendButton").addEventListener("click", addUser);
   });
+
+
+  /* FUNCTION VALIDATOR */
 
   // Lets Check if the functions are working properly displaying the result on the console.
   function Start() {
