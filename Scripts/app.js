@@ -1,5 +1,5 @@
 /*
- FILE: COMP125-M2020-MidTerm-Test js
+ FILE: COMP125-M2020-MidTerm-Test JavaScript
  AUTHOR: Thiago Luiz Batista
  WEB SITE: The Travel Report
  DESCRIPTION: This is the JavaScript file for the whole web page
@@ -209,17 +209,17 @@
     let user = {};
 
     (user.date = Date.now()),
-    (user.FName = document.getElementById("firstName").value),
-    (user.LName = document.getElementById("lastName").value),
-    (user.CNumber = document.getElementById("contactNumber").value),
-    (user.Email = document.getElementById("email").value),
-    (user.Message = document.getElementById("yourMessage")),
-    (user.Filled = new(function () {
-      console.log(
-        `%c${user.FName} filled the form`,
-        "background: green; color: white; font-size: 14px;"
-      );
-    })());
+      (user.FName = document.getElementById("firstName").value),
+      (user.LName = document.getElementById("lastName").value),
+      (user.CNumber = document.getElementById("contactNumber").value),
+      (user.Email = document.getElementById("email").value),
+      (user.Message = document.getElementById("yourMessage")),
+      (user.Filled = new (function () {
+        console.log(
+          `%c${user.FName} filled the form`,
+          "background: green; color: white; font-size: 14px;"
+        );
+      })());
 
     Users.push(user);
     document.forms[0].reset();
@@ -232,7 +232,6 @@
   document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("sendButton").addEventListener("click", addUser);
   });
-
 
   /* FUNCTION VALIDATOR */
 

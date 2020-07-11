@@ -1,21 +1,22 @@
 /* 
 
- FILE: COMP125-M2020-MidTerm-Test css
+ FILE: COMP125-M2020-MidTerm-Test Custom Style Sheet
  AUTHOR: Thiago Luiz Batista
  WEB SITE: The Travel Report
  DESCRIPTION: This is the Style Sheet for the whole web page
 
 */
 
-/* custom style sheet */
+/* custom style sheet given */
 
 .navbar {
     opacity: 0.8;
+    background-color: #0D5EAF !important;
+    color: #FFF !important;
 }
 
 #MainTitle {
     font-size: 4em;
-    color: #5690CF;
     padding-top: 1em
 }
 
@@ -30,4 +31,40 @@ section {
 
 #contactForm {
     margin-bottom: 4em;
+}
+
+/* custom style sheet done */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    height: 100vh !important;
+}
+
+section:last-child {
+    background-color: #0d5eafb9 !important;
+    text-align: center;
+    padding-left: 250px;
+
+}
+
+h1,
+h2,
+h4,
+p {
+    text-align: center;
+    color: #0D5EAF;
+}
+
+h2 {
+    text-shadow: 1px 1px 10px #0d5eafe1;
+    text-transform: uppercase;
+}
+
+p {
+    text-shadow: 1px 1px 5px;
 }
