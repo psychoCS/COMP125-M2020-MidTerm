@@ -35,6 +35,10 @@ section {
 
 /* custom style sheet done */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -43,13 +47,14 @@ body {
 section {
     width: 100%;
     height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section:last-child {
     background-color: #0d5eafb9 !important;
     text-align: center;
-    padding-left: 250px;
-
 }
 
 h1,
