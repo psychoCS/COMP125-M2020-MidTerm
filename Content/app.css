@@ -7,7 +7,7 @@
 
 */
 
-/* custom style sheet given */
+/* PRESET CUSTOM STYLE SHEET */
 
 .navbar {
     opacity: 0.8;
@@ -33,16 +33,16 @@ section {
     margin-bottom: 4em;
 }
 
-/* custom style sheet done */
+/* CUSTOM STYLE SHEET BY AUTHOR  */
+
+
+/* Smooth the scrolling */
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
+/* Format more suited for the eyes */
 
 section {
     width: 100%;
@@ -52,10 +52,19 @@ section {
     align-items: center;
 }
 
+section:nth-child(5) {
+    padding-top: 10px;
+    height: 10vh !important;
+}
+
+/* Make the form more stylish */
+
 section:last-child {
     background-color: #0d5eafb9 !important;
     text-align: center;
 }
+
+/* make the color a pattern for the whole site */
 
 h1,
 h2,
